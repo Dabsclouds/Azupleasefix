@@ -30,7 +30,7 @@ async def on_message(message):
     category = channel.category
     if message.channel.category.name == 'catch':
             content = message.content
-            if 'Ping' in content:
+            if '<@272753648910729217>' in content:
                       await channel.clone()
                       category_name = 'Stock 1'
                       guild = message.guild
