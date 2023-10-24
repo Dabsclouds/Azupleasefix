@@ -122,7 +122,14 @@ async def on_message(message):
                                       if len(new_category.channels) <= 48: 
                                        await channel.edit(name="locked", category=new_category, sync_permissions=True)
                       await channel.send(f'<@716390085896962058> redirect 1 2 3 4 5 6 7 8 9 10')
-          
+
+@client.command()
+async def resume(ctx):
+  spam.start()
+
+@client.command()
+async def hold(ctx):
+  spam.cancel()
 
 from flask import Flask
 from threading import Thread
