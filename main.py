@@ -29,11 +29,10 @@ async def on_message(message):
     guild = message.guild
     category = channel.category
       if message.channel.category.name == 'catch':
-        content = message.content
+      content = message.content
       
       if 'Ping' in content:
                 await channel.clone()
-             # If solution found, move to new category and sync.
                       category_name = 'Stock 1'
                       guild = message.guild
                       old_category = channel.category
