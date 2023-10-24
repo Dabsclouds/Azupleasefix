@@ -28,8 +28,8 @@ async def on_message(message):
     channel = client.get_channel(message.channel.id)
     guild = message.guild
     category = channel.category
-      if message.channel.category.name == 'catch':
-      content = message.content
+    if message.channel.category.name == 'catch':
+    content = message.content
       
       if 'Ping' in content:
                 await channel.clone()
