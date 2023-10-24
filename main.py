@@ -66,7 +66,7 @@ async def on_message(message):
                           num_channels = len(new_category.channels)
                           print(f"There are {num_channels} channels in the {category_name} category.")
                           if len(new_category.channels) <= 48:
-                           await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                           await channel.edit(name="locked", category=new_category, sync_permissions=True)
                           if len(new_category.channels) >= 48:
                             category_name = 'Stock 5'
                             guild = message.guild
@@ -75,7 +75,7 @@ async def on_message(message):
                             num_channels = len(new_category.channels)
                             print(f"There are {num_channels} channels in the {category_name} category.")
                             if len(new_category.channels) <= 48:
-                             await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                             await channel.edit(name="locked", category=new_category, sync_permissions=True)
                             if len(new_category.channels) >= 48:
                               category_name = 'Stock 6'
                               guild = message.guild
@@ -84,7 +84,7 @@ async def on_message(message):
                               num_channels = len(new_category.channels)
                               print(f"There are {num_channels} channels in the {category_name} category.")
                               if len(new_category.channels) <= 48:
-                               await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                               await channel.edit(name="locked", category=new_category, sync_permissions=True)
                               if len(new_category.channels) >= 48:
                                 category_name = 'Stock 7'
                                 guild = message.guild
@@ -93,7 +93,7 @@ async def on_message(message):
                                 num_channels = len(new_category.channels)
                                 print(f"There are {num_channels} channels in the {category_name} category.")
                                 if len(new_category.channels) <= 48:
-                                 await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                                 await channel.edit(name="locked", category=new_category, sync_permissions=True)
                                 if len(new_category.channels) >= 48:
                                   category_name = 'Stock 8'
                                   guild = message.guild
@@ -102,7 +102,7 @@ async def on_message(message):
                                   num_channels = len(new_category.channels)
                                   print(f"There are {num_channels} channels in the {category_name} category.")
                                   if len(new_category.channels) <= 48: 
-                                   await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                                   await channel.edit(name="locked", category=new_category, sync_permissions=True)
                                   if len(new_category.channels) >= 48:
                                     category_name = 'Stock 9'
                                     guild = message.guild
@@ -111,7 +111,7 @@ async def on_message(message):
                                     num_channels = len(new_category.channels)
                                     print(f"There are {num_channels} channels in the {category_name} category.")
                                     if len(new_category.channels) <= 48: 
-                                     await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                                     await channel.edit(name="locked", category=new_category, sync_permissions=True)
                                     if len(new_category.channels) >= 48:
                                       category_name = 'Stock 10'
                                       guild = message.guild
@@ -120,7 +120,7 @@ async def on_message(message):
                                       num_channels = len(new_category.channels)
                                       print(f"There are {num_channels} channels in the {category_name} category.")
                                       if len(new_category.channels) <= 48: 
-                                       await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                                       await channel.edit(name="locked", category=new_category, sync_permissions=True)
                       await channel.send(f'<@716390085896962058> redirect 1 2 3 4 5 6 7 8 9 10')
           
 
