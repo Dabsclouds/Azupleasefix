@@ -27,15 +27,100 @@ async def on_message(message):
     if message.author.id == pokename:
       content = message.content
       
-      if 'Rare Ping' in content:
-        await message.channel.send(f'!lock')
-
-      elif 'Regional Ping' in content:
-        await message.channel.send(f'!lock')
-
-      elif 'Collection Ping' in content and "@" in content:
-        await message.channel.send(f'!lock')
-
+      if 'Ping' in content:
+                await channel.clone()
+             # If solution found, move to new category and sync.
+                      category_name = 'Stock 1'
+                      guild = message.guild
+                      old_category = channel.category
+                      new_category = [c for c in guild.categories if c.name == category_name][0]
+                      num_channels = len(new_category.channels)
+                      print(f"There are {num_channels} channels in the {category_name} category.")
+                      if len(new_category.channels) <= 48:
+                       await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                      if len(new_category.channels) >= 48:
+                       category_name = 'Stock 2'
+                       guild = message.guild
+                       old_category = channel.category
+                       new_category = [c for c in guild.categories if c.name == category_name][0]
+                       num_channels = len(new_category.channels)
+                       print(f"There are {num_channels} channels in the {category_name} category.")
+                       if len(new_category.channels) <= 48:
+                        await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                       if len(new_category.channels) >= 48:
+                        category_name = 'Stock 3'
+                        guild = message.guild
+                        old_category = channel.category
+                        new_category = [c for c in guild.categories if c.name == category_name][0]
+                        num_channels = len(new_category.channels)
+                        print(f"There are {num_channels} channels in the {category_name} category.")
+                        if len(new_category.channels) <= 48:
+                         await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                        if len(new_category.channels) >= 48:
+                          category_name = 'Stock 4'
+                          guild = message.guild
+                          old_category = channel.category
+                          new_category = [c for c in guild.categories if c.name == category_name][0]
+                          num_channels = len(new_category.channels)
+                          print(f"There are {num_channels} channels in the {category_name} category.")
+                          if len(new_category.channels) <= 48:
+                           await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                          if len(new_category.channels) >= 48:
+                            category_name = 'Stock 5'
+                            guild = message.guild
+                            old_category = channel.category
+                            new_category = [c for c in guild.categories if c.name == category_name][0]
+                            num_channels = len(new_category.channels)
+                            print(f"There are {num_channels} channels in the {category_name} category.")
+                            if len(new_category.channels) <= 48:
+                             await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                            if len(new_category.channels) >= 48:
+                              category_name = 'Stock 6'
+                              guild = message.guild
+                              old_category = channel.category
+                              new_category = [c for c in guild.categories if c.name == category_name][0]
+                              num_channels = len(new_category.channels)
+                              print(f"There are {num_channels} channels in the {category_name} category.")
+                              if len(new_category.channels) <= 48:
+                               await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                              if len(new_category.channels) >= 48:
+                                category_name = 'Stock 7'
+                                guild = message.guild
+                                old_category = channel.category
+                                new_category = [c for c in guild.categories if c.name == category_name][0]
+                                num_channels = len(new_category.channels)
+                                print(f"There are {num_channels} channels in the {category_name} category.")
+                                if len(new_category.channels) <= 48:
+                                 await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                                if len(new_category.channels) >= 48:
+                                  category_name = 'Stock 8'
+                                  guild = message.guild
+                                  old_category = channel.category
+                                  new_category = [c for c in guild.categories if c.name == category_name][0]
+                                  num_channels = len(new_category.channels)
+                                  print(f"There are {num_channels} channels in the {category_name} category.")
+                                  if len(new_category.channels) <= 48: 
+                                   await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                                  if len(new_category.channels) >= 48:
+                                    category_name = 'Stock 9'
+                                    guild = message.guild
+                                    old_category = channel.category
+                                    new_category = [c for c in guild.categories if c.name == category_name][0]
+                                    num_channels = len(new_category.channels)
+                                    print(f"There are {num_channels} channels in the {category_name} category.")
+                                    if len(new_category.channels) <= 48: 
+                                     await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                                    if len(new_category.channels) >= 48:
+                                      category_name = 'Stock 10'
+                                      guild = message.guild
+                                      old_category = channel.category
+                                      new_category = [c for c in guild.categories if c.name == category_name][0]
+                                      num_channels = len(new_category.channels)
+                                      print(f"There are {num_channels} channels in the {category_name} category.")
+                                      if len(new_category.channels) <= 48: 
+                                       await channel.edit(name=locked, category=new_category, sync_permissions=True)
+                      await channel.send(f'<@716390085896962058> redirect 1 2 3 4 5 6 7 8 9 10')
+          
       elif 'Shiny Hunt Pings' in content and "@" in content:
         await asyncio.sleep(12)
         await message.channel.send(f'!lock')
