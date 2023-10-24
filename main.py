@@ -123,10 +123,6 @@ async def on_message(message):
                                        await channel.edit(name=locked, category=new_category, sync_permissions=True)
                       await channel.send(f'<@716390085896962058> redirect 1 2 3 4 5 6 7 8 9 10')
           
-      elif 'Shiny Hunt Pings' in content and "@" in content:
-        await asyncio.sleep(12)
-        await message.channel.send(f'!lock')
-
 
 from flask import Flask
 from threading import Thread
