@@ -22,10 +22,14 @@ spam.start()
 async def on_ready():
     print(f'Logged into account: {client.user.name}')
 
+
 @client.event
 async def on_message(message):
-    if message.author.id == pokename:
-      content = message.content
+    channel = client.get_channel(message.channel.id)
+    guild = message.guild
+    category = channel.category
+      if message.channel.category.name == 'catch':
+        content = message.content
       
       if 'Ping' in content:
                 await channel.clone()
